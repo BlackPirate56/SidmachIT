@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/images/logo1.png" rel="icon" />
+    <title>Grade56 eClass Platform</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+</head>
+<body style="background-color:#333; color:white;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#ffb900;">
+        @*<a class="navbar-brand" style="color:rgb(56, 55, 55)" href="#">Navbar</a>*@
+        <a class="navbar-brand" href="#">
+            <img src="~/images/logo.png" width="120" height="50" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" >
+                <li class="nav-item active" >
+                    <a class="nav-link" style="color:rgb(56, 55, 55)" href="#">Grade56 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:rgb(56, 55, 55)" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:rgb(56, 55, 55)" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:rgb(56, 55, 55)" href="#" tabindex="-1" aria-disabled="true">Email & Apps</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer style="text-align:center;padding-top:5%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Support</h5>
+                        <ul style="list-style:none;text-align:left;margin-left:25%;line-height:30px;">
+                            <a href="#" style="color:white;"><li>Account Profile</li></a>
+                            <a href="#" style="color:white;"><li>Support</li></a>
+                            <a href="#" style="color:white;"><li>About Us</li></a>
+                            <a href="#" style="color:white;"><li>Sitemap</li></a>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Education</h5>
+                        <ul style="list-style:none;text-align:left;margin-left:25%;line-height:30px;">
+                            <a href="#" style="color:white;"><li>Microsoft in Education</li></a>
+                            <a href="#" style="color:white;"><li>Office 365 for schools</li></a>
+                            <a href="#" style="color:white;"><li>Office for Students</li></a>
+                            <a href="#" style="color:white;"><li>Instructors</li></a>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Enterprise</h5>
+                        <ul style="list-style:none;text-align:left;margin-left:25%;line-height:30px;">
+                            <a href="#" style="color:white;"><li>Concepts</li></a>
+                            <a href="#" style="color:white;"><li>Enterprise</li></a>
+                            <a href="#" style="color:white;"><li>Microsoft partner resources</li></a>
+                            <a href="#" style="color:white;"><li>Affiliates</li></a>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Social Hub</h5>
+                        <br />
+                        <a href="#"><i class="fa fa-facebook rounded-circle" style="padding:3.5% 0;color:white;background-color:#4267b2;font-size:15px;height:30px;width:30px;"></i></a>
+                        <a href="#"><i class="fa fa-twitter rounded-circle" style="padding:3.5% 0;color:white;background-color:#38A1F3;font-size:15px;height:30px;width:30px;"></i></a>
+                        <a href="#"><i class="fa fa-instagram rounded-circle" style="padding:2.8% 1.5%;color:white;background-color:rgb(242, 44, 189);font-size:15px;height:30px;width:30px;"></i></a>
+                        <a href="#"><i class="fa fa-linkedin rounded-circle" style="padding:3% 0;color:white;background-color:#0077B5;font-size:15px;height:32px;width:32px;"></i></a>
+                        <a href="#"><i class="fa fa-google-plus rounded-circle" style="padding:3% 0;color:white;background-color:red;font-size:15px;height:30px;width:30px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <p>&copy; @DateTime.Now.Year Sidmach Technologies Nigeria Limited. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
